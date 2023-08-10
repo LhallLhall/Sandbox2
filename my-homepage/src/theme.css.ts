@@ -32,7 +32,7 @@ const fontSizes = {
   2: "16px",
   3: "18px",
   4: "24px",
-  5: "32px",
+  5: "28px",
   6: "48px",
   7: "64px",
 }
@@ -42,12 +42,12 @@ const fontWeights = {
   medium: "500",
   semibold: "600",
   bold: "700",
-  extrabold: "800",
+  extrabold: "100",
 }
 
 const fonts = {
-  text: '"DM Sans", sans-serif',
-  heading: '"DM Sans", sans-serif',
+  text: '"Muli", Arial',
+  heading: 'Times New Roman, Times, Serif',
   mono: "DM Mono, Menlo, monospace",
 }
 

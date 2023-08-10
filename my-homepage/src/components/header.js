@@ -21,6 +21,7 @@ import {
 } from "./header.css"
 import NavItemGroup from "./nav-item-group"
 import BrandLogo from "./brand-logo"
+// import BrandLogo from "../hof-logo.png"
 
 export default function Header() {
   const data = useStaticQuery(graphql`
@@ -71,7 +72,7 @@ export default function Header() {
   }, [isOpen])
 
   return (
-    <header>
+    <header style={{ background: "#af0a0a" }}>
       <Container className={desktopHeaderNavWrapper}>
         <Space size={2} />
         <Flex variant="spaceBetween">
@@ -85,12 +86,12 @@ export default function Header() {
                 navItems.map((navItem) => (
                   <li key={navItem.id}>
                     {navItem.navItemType === "Group" ? (
-                      <NavItemGroup
+                      <NavItemGroup style={{ color: "#FFFFFF" }}
                         name={navItem.name}
                         navItems={navItem.navItems}
                       />
                     ) : (
-                      <NavLink to={navItem.href}>{navItem.text}</NavLink>
+                      <NavLink style={{ color: "#FFFFFF" }} to={navItem.href}>{navItem.text}</NavLink>
                     )}
                   </li>
                 ))}

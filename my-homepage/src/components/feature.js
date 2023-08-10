@@ -14,10 +14,10 @@ import {
 
 export default function Feature(props) {
   return (
-    <Section padding={4} background="muted">
+    <Section>
       <Container>
         <Flex gap={4} variant="responsive">
-          <Box width="half" order={props.flip ? 1 : null}>
+          <Box width="half" order={1}>
             {props.image && (
               <GatsbyImage
                 alt={props.image.alt}
@@ -31,11 +31,11 @@ export default function Feature(props) {
               {props.heading}
             </Subhead>
             <Text variant="lead">{props.text}</Text>
-            <ButtonList links={props.links} />
+            <ButtonList background="primary" links={props.links} />
           </Box>
         </Flex>
       </Container>
-    </Section>
+    </Section >
   )
 }
 

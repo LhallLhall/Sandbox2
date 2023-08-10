@@ -20,9 +20,9 @@ export default {
         },
 
         {
-            name: 'image_url',
-            type: 'url',
-            title: 'Image URL',
+            name: 'image',
+            type: 'image',
+            title: 'Image',
         },
         {
             name: "linkedin_url",

@@ -64,12 +64,14 @@ export default function NavItemGroup({ name, navItems }) {
 
   return (
     <Flex
+      
       data-id={`${name}-group-wrapper`}
       variant="columnStart"
       gap={4}
       className={styles.navGroupWrapper}
     >
       <NavButtonLink
+      style={{ color: "#FFFFFF" }}
         onClick={onGroupButtonClick}
         className={styles.navGroupTitle}
       >

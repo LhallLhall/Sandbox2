@@ -24,9 +24,9 @@ export default {
         title: 'Interview Video URL',
       },
       {
-        name: 'image_url',
-        type: 'url',
-        title: 'Image URL',
+        name: 'image',
+        type: 'image',
+        title: 'Image',
       },
       {
         name: 'induction_year',

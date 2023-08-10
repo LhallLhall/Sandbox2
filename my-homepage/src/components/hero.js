@@ -15,24 +15,24 @@ import {
 
 export default function Hero(props) {
   return (
-    <Section>
+    <Section style={{ background: "#af0a0a" }} >
       <Container>
-        <Flex gap={4} variant="responsive">
-          <Box width="half">
+        <Flex gap={0}>
+          {/* <Box width="half">
             {props.image && (
               <GatsbyImage
                 alt={props.image.alt}
                 image={getImage(props.image.gatsbyImageData)}
               />
             )}
-          </Box>
-          <Box width="half">
-            <Heading as="h1">
+          </Box> */}
+          <Box variant="center" >
+            <Heading style={{ color: "#FFFFFF" }} as="h1">
               {props.kicker && <Kicker>{props.kicker}</Kicker>}
               {props.h1}
             </Heading>
-            <Subhead as="h2">{props.subhead}</Subhead>
-            <Text as="p">{props.text}</Text>
+            <Subhead style={{ color: "#FFFFFF" }} as="h2">{props.subhead}</Subhead>
+            <Text style={{ color: "#FFFFFF" }} as="p">{props.text}</Text>
             <ButtonList links={props.links} />
           </Box>
         </Flex>
