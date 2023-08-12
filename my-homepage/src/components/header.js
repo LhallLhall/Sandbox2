@@ -75,7 +75,7 @@ export default function Header() {
     <header style={{ background: "#af0a0a" }}>
       <Container className={desktopHeaderNavWrapper}>
         <Space size={2} />
-        <Flex variant="spaceBetween">
+        <Flex variant="spaceBetween" style={{ width: "130%" }}>
           <NavLink to="/">
             <VisuallyHidden>Home</VisuallyHidden>
             <BrandLogo />

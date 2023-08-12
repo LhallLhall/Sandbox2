@@ -39,7 +39,13 @@ import aboutLeadership from "./aboutLeadership"
 import aboutLogoList from "./aboutLogoList"
 
 import inductee from "./inductee"
+import inducteeList from "./inducteeList"
 import entrepreneur from "./entrepreneur"
+import entrepreneurList from "./entrepreneurList"
+import footerLink from "./footerLink"
+import footerLinkList from "./footerLinkList"
+import sponsor from "./sponsor"
+import sponsorList from "./sponsorList"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -49,7 +55,13 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     inductee,
+    inducteeList,
     entrepreneur,
+    // entrepreneurList,
+    footerLink,
+    footerLinkList,
+    sponsor,
+    sponsorList,
     homepage,
     homepageLink,
     homepageHero,
@@ -83,6 +95,6 @@ export default createSchema({
     aboutProfile,
     aboutLeadership,
     aboutLogoList,
-    
+
   ]),
 })

@@ -26,13 +26,13 @@ export default function Hero(props) {
               />
             )}
           </Box> */}
-          <Box variant="center" >
-            <Heading style={{ color: "#FFFFFF" }} as="h1">
+          <Box variant="center">
+            <Heading variant="center" style={{ color: "#FFFFFF", fontSize: "73px", fontWeight: "100", lineHeight: "128px", fontFamily: "AmericanPurpose, Arial, Sans-Serif", margin: "0px" }} as="h1">
               {props.kicker && <Kicker>{props.kicker}</Kicker>}
               {props.h1}
             </Heading>
-            <Subhead style={{ color: "#FFFFFF" }} as="h2">{props.subhead}</Subhead>
-            <Text style={{ color: "#FFFFFF" }} as="p">{props.text}</Text>
+            <Subhead variant="center" style={{ color: "#FFFFFF" }} as="h2">{props.subhead}</Subhead>
+            <Text variant="center" style={{ color: "#FFFFFF" }} as="p">{props.text}</Text>
             <ButtonList links={props.links} />
           </Box>
         </Flex>
